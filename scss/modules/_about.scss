@@ -1,0 +1,75 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include media-queries(atMediumLarge) {
+    flex-direction: column-reverse;
+  }
+
+  &__left {
+    flex-basis: 50%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__right {
+    flex-basis: 45%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 100%;
+      margin-bottom: 4rem;
+    }
+    img {
+      border-radius: 1.5rem;
+    }
+  }
+
+  &__bio {
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  &__skillsTitle {
+    color: var(--color-main);
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+
+    @include media-queries(atMediumLarge) {
+      font-size: 2rem;
+    }
+  }
+
+  &__skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+
+    @include media-queries(atMediumLarge) {
+      gap: 1.5rem;
+    }
+
+    li {
+      font-size: 1.4rem;
+      padding: 0.5rem 2rem;
+      color: var(--color-main);
+      padding-top: 0.8rem;
+      border: 2px solid var(--color-main);
+      border-radius: 4rem;
+
+      &:hover {
+        background-color: var(--color-main);
+        color: var(--color-light);
+      }
+
+      @include media-queries(atMediumLarge) {
+        font-size: 1.3rem;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}

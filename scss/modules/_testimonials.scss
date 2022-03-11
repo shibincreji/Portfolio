@@ -1,0 +1,108 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .splide {
+    &__pagination {
+      padding-bottom: 2rem;
+    }
+
+    &__arrow {
+      background-color: var(--color-main);
+
+      &--prev {
+        right: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+
+    &__pagination__page.is-active {
+      background-color: var(--color-main);
+    }
+  }
+
+  &__box {
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    @include media-queries(atMediumLarge) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 3rem 8rem;
+    background-color: var(--color-darkest);
+    padding-bottom: 8rem;
+
+    @include media-queries(atMediumLarge) {
+      background-color: var(--color-black);
+      padding: 0;
+      padding-left: 5rem;
+      padding-right: 3rem;
+    }
+
+    @include media-queries(atMedium) {
+      padding-left: 3rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__sign {
+    top: 4rem;
+    left: 5.5rem;
+    font-size: 8rem;
+    position: absolute;
+    color: var(--color-text);
+
+    @include media-queries(atLarge) {
+      font-size: 6rem;
+      top: 2rem;
+      left: 6.5rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      font-size: 5rem;
+      top: 4rem;
+    }
+
+    @include media-queries(atMedium) {
+      font-size: 4rem;
+      top: 6rem;
+    }
+  }
+
+  &__quotes {
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    color: var(--color-gray);
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    h4 {
+      font-weight: var(--font-semi-bold);
+      color: var(--color-gray);
+      font-size: 2rem;
+    }
+
+    p {
+      font-weight: var(--font-semi-bold);
+      color: var(--color-accent);
+    }
+  }
+}

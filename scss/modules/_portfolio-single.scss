@@ -1,0 +1,58 @@
+.portfolioSingle {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+
+  &__img {
+    margin-bottom: 2rem;
+    img {
+      border-radius: 0.7rem;
+      height: 50vh;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  &__stacks {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    li {
+      color: var(--color-accent);
+      border: 2px solid var(--color-accent);
+      border-radius: 5rem;
+      font-size: 1.2rem;
+      font-weight: var(--font-medium);
+      padding: 0.5rem 2.5rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--color-accent);
+    font-weight: var(--font-semi-bold);
+    font-size: 2rem;
+  }
+
+  &__linkBottom {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 4.2rem;
+    color: var(--color-lighter);
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+  }
+
+  &__content {
+    margin: 4rem 0;
+    a {
+      color: var(--color-accent);
+      font-weight: var(--font-semi-bold);
+    }
+  }
+}
