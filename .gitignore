@@ -1,3 +1,5 @@
 node_modules/
 # Nuxt generate
 # dist
+# Local Netlify folder
+.netlify
